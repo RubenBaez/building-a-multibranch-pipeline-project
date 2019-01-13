@@ -11,7 +11,6 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                sh 'npm config set unsafe-perm=true'
                 sh 'npm install'
             }
         }
